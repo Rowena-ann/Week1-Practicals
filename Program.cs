@@ -1,4 +1,5 @@
 ﻿using System;
+
 class Program
 {
     static void Main()
@@ -19,7 +20,6 @@ class Program
         else
         {
             Console.WriteLine("Invalid age input.");
-            age = 0; // Fallback value for the variable so the program continues smoothly
         }
         Console.WriteLine(); // Blank line for spacing
 
@@ -105,6 +105,30 @@ class Program
         else
         {
             Console.WriteLine("Invalid input. Please enter a valid numerical year.");
+        }
+        Console.WriteLine();
+
+
+        // ==========================================
+        // Task 5: Even or Odd Checker
+        // ==========================================
+        Console.WriteLine("--- TASK 5: EVEN OR ODD CHECKER ---");
+        Console.Write("Enter an integer to check if it's even or odd: ");
+        if (int.TryParse(Console.ReadLine(), out int checkNumber))
+        {
+            // Modulus by 2: If the remainder is 0, the number is even
+            if (checkNumber % 2 == 0)
+            {
+                Console.WriteLine($"{checkNumber} is an even number.");
+            }
+            else
+            {
+                Console.WriteLine($"{checkNumber} is an odd number.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Invalid input. Please enter a whole number.");
         }
 
         // Keeps the console window open at the end
