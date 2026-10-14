@@ -130,9 +130,5 @@ class Program
         {
             Console.WriteLine("Invalid input. Please enter a whole number.");
         }
-
-        // Keeps the console window open at the end
-        Console.WriteLine("\nPress any key to exit...");
-        Console.ReadKey();
     }
 }
